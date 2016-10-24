@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants/GEConstants.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITabBarDelegate,UITabBarControllerDelegate>
 
+- (IBAction)changeViewForSelectedMode:(id)sender;
 
 @end
 

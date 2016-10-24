@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F25CE7B1DBDE47900DEDEA2 /* GETravelPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE7A1DBDE47900DEDEA2 /* GETravelPlannerViewController.m */; };
+		1F25CE7F1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE7E1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m */; };
+		1F25CE821DBE212200DEDEA2 /* GETravelListingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE811DBE212200DEDEA2 /* GETravelListingTableViewController.m */; };
+		1F25CE861DBE2A5900DEDEA2 /* BusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE851DBE2A5900DEDEA2 /* BusData.swift */; };
+		1F25CE881DBE2A9300DEDEA2 /* FlighData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE871DBE2A9300DEDEA2 /* FlighData.swift */; };
+		1F25CE8A1DBE2AA500DEDEA2 /* TrainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE891DBE2AA500DEDEA2 /* TrainData.swift */; };
 		1FEB674D1DA96A0800D3196A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB674C1DA96A0800D3196A /* main.m */; };
 		1FEB67501DA96A0800D3196A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB674F1DA96A0800D3196A /* AppDelegate.m */; };
 		1FEB67531DA96A0800D3196A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB67521DA96A0800D3196A /* ViewController.m */; };
@@ -17,6 +23,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F25CE791DBDE47900DEDEA2 /* GETravelPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelPlannerViewController.h; path = ViewControllers/GETravelPlannerViewController.h; sourceTree = "<group>"; };
+		1F25CE7A1DBDE47900DEDEA2 /* GETravelPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelPlannerViewController.m; path = ViewControllers/GETravelPlannerViewController.m; sourceTree = "<group>"; };
+		1F25CE7C1DBDE4C700DEDEA2 /* GEConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEConstants.h; path = Constants/GEConstants.h; sourceTree = "<group>"; };
+		1F25CE7D1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelPlannerTabBarController.h; path = ViewControllers/GETravelPlannerTabBarController.h; sourceTree = "<group>"; };
+		1F25CE7E1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelPlannerTabBarController.m; path = ViewControllers/GETravelPlannerTabBarController.m; sourceTree = "<group>"; };
+		1F25CE801DBE212200DEDEA2 /* GETravelListingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelListingTableViewController.h; path = ViewControllers/GETravelListingTableViewController.h; sourceTree = "<group>"; };
+		1F25CE811DBE212200DEDEA2 /* GETravelListingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelListingTableViewController.m; path = ViewControllers/GETravelListingTableViewController.m; sourceTree = "<group>"; };
+		1F25CE841DBE2A5900DEDEA2 /* GoEuroTravelPlanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoEuroTravelPlanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F25CE851DBE2A5900DEDEA2 /* BusData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusData.swift; path = DataModels/BusData.swift; sourceTree = "<group>"; };
+		1F25CE871DBE2A9300DEDEA2 /* FlighData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlighData.swift; path = DataModels/FlighData.swift; sourceTree = "<group>"; };
+		1F25CE891DBE2AA500DEDEA2 /* TrainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainData.swift; path = DataModels/TrainData.swift; sourceTree = "<group>"; };
 		1FEB67481DA96A0800D3196A /* GoEuroTravelPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEuroTravelPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FEB674C1DA96A0800D3196A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1FEB674E1DA96A0800D3196A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,6 +58,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F25CE771DBDDBB200DEDEA2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1F25CE7C1DBDE4C700DEDEA2 /* GEConstants.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		1F25CE831DBE2A1500DEDEA2 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				1F25CE851DBE2A5900DEDEA2 /* BusData.swift */,
+				1F25CE841DBE2A5900DEDEA2 /* GoEuroTravelPlanner-Bridging-Header.h */,
+				1F25CE871DBE2A9300DEDEA2 /* FlighData.swift */,
+				1F25CE891DBE2AA500DEDEA2 /* TrainData.swift */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
 		1FEB673F1DA96A0800D3196A = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +96,12 @@
 		1FEB674A1DA96A0800D3196A /* GoEuroTravelPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				1F25CE831DBE2A1500DEDEA2 /* DataModels */,
+				1F25CE771DBDDBB200DEDEA2 /* Constants */,
+				1F25CE7D1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.h */,
+				1F25CE7E1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m */,
+				1F25CE801DBE212200DEDEA2 /* GETravelListingTableViewController.h */,
+				1F25CE811DBE212200DEDEA2 /* GETravelListingTableViewController.m */,
 				1FEB674E1DA96A0800D3196A /* AppDelegate.h */,
 				1FEB674F1DA96A0800D3196A /* AppDelegate.m */,
 				1FEB67511DA96A0800D3196A /* ViewController.h */,
@@ -70,6 +112,8 @@
 				1FEB675F1DA96A0800D3196A /* Info.plist */,
 				1FEB67571DA96A0800D3196A /* GoEuroTravelPlanner.xcdatamodeld */,
 				1FEB674B1DA96A0800D3196A /* Supporting Files */,
+				1F25CE791DBDE47900DEDEA2 /* GETravelPlannerViewController.h */,
+				1F25CE7A1DBDE47900DEDEA2 /* GETravelPlannerViewController.m */,
 			);
 			path = GoEuroTravelPlanner;
 			sourceTree = "<group>";
@@ -153,9 +197,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FEB67531DA96A0800D3196A /* ViewController.m in Sources */,
+				1F25CE7B1DBDE47900DEDEA2 /* GETravelPlannerViewController.m in Sources */,
+				1F25CE8A1DBE2AA500DEDEA2 /* TrainData.swift in Sources */,
+				1F25CE7F1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m in Sources */,
 				1FEB67501DA96A0800D3196A /* AppDelegate.m in Sources */,
+				1F25CE861DBE2A5900DEDEA2 /* BusData.swift in Sources */,
 				1FEB67591DA96A0800D3196A /* GoEuroTravelPlanner.xcdatamodeld in Sources */,
+				1F25CE881DBE2A9300DEDEA2 /* FlighData.swift in Sources */,
 				1FEB674D1DA96A0800D3196A /* main.m in Sources */,
+				1F25CE821DBE212200DEDEA2 /* GETravelListingTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +317,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GoEuroTravelPlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.test.GoEuroTravelPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoEuroTravelPlanner/GoEuroTravelPlanner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -278,10 +331,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GoEuroTravelPlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.test.GoEuroTravelPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoEuroTravelPlanner/GoEuroTravelPlanner-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -304,6 +359,7 @@
 				1FEB67641DA96A0800D3196A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

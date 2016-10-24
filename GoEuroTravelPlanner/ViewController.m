@@ -21,7 +21,11 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    NSString  *size = [NSString stringWithFormat:@"myurl/%d",kImageSize];
+    NSLog(@"%@",size);
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)changeViewForSelectedMode:(id)sender {
+}
 @end
