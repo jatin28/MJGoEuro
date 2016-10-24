@@ -20,9 +20,11 @@
 		1FEB67591DA96A0800D3196A /* GoEuroTravelPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB67571DA96A0800D3196A /* GoEuroTravelPlanner.xcdatamodeld */; };
 		1FEB675B1DA96A0800D3196A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB675A1DA96A0800D3196A /* Assets.xcassets */; };
 		1FEB675E1DA96A0800D3196A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB675C1DA96A0800D3196A /* LaunchScreen.storyboard */; };
+		FC2741D802F4B488EB0DC6ED /* libPods-GoEuroTravelPlanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3ADD1A62BF2EC63DF9CCFB /* libPods-GoEuroTravelPlanner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16C70F49D3E817F034478560 /* Pods-GoEuroTravelPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuroTravelPlanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuroTravelPlanner/Pods-GoEuroTravelPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		1F25CE791DBDE47900DEDEA2 /* GETravelPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelPlannerViewController.h; path = ViewControllers/GETravelPlannerViewController.h; sourceTree = "<group>"; };
 		1F25CE7A1DBDE47900DEDEA2 /* GETravelPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelPlannerViewController.m; path = ViewControllers/GETravelPlannerViewController.m; sourceTree = "<group>"; };
 		1F25CE7C1DBDE4C700DEDEA2 /* GEConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEConstants.h; path = Constants/GEConstants.h; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		1FEB675A1DA96A0800D3196A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FEB675D1DA96A0800D3196A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FEB675F1DA96A0800D3196A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3ADD1A62BF2EC63DF9CCFB /* libPods-GoEuroTravelPlanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEuroTravelPlanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5DD17BBB5879CB03873312 /* Pods-GoEuroTravelPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuroTravelPlanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuroTravelPlanner/Pods-GoEuroTravelPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC2741D802F4B488EB0DC6ED /* libPods-GoEuroTravelPlanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,8 @@
 			children = (
 				1FEB674A1DA96A0800D3196A /* GoEuroTravelPlanner */,
 				1FEB67491DA96A0800D3196A /* Products */,
+				46AB0A2DAD846B340FB5A89C /* Pods */,
+				4042C53A2DA02CE8BF652927 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +133,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4042C53A2DA02CE8BF652927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D3ADD1A62BF2EC63DF9CCFB /* libPods-GoEuroTravelPlanner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46AB0A2DAD846B340FB5A89C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B5DD17BBB5879CB03873312 /* Pods-GoEuroTravelPlanner.debug.xcconfig */,
+				16C70F49D3E817F034478560 /* Pods-GoEuroTravelPlanner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FEB67621DA96A0800D3196A /* Build configuration list for PBXNativeTarget "GoEuroTravelPlanner" */;
 			buildPhases = (
+				5EC8BAC99FE660B89A20FEF7 /* [CP] Check Pods Manifest.lock */,
 				1FEB67441DA96A0800D3196A /* Sources */,
 				1FEB67451DA96A0800D3196A /* Frameworks */,
 				1FEB67461DA96A0800D3196A /* Resources */,
+				A0ED5771D687EC0BB1102CEE /* [CP] Embed Pods Frameworks */,
+				B7983FCBE2B3FE467CF7F865 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +217,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EC8BAC99FE660B89A20FEF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0ED5771D687EC0BB1102CEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuroTravelPlanner/Pods-GoEuroTravelPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7983FCBE2B3FE467CF7F865 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuroTravelPlanner/Pods-GoEuroTravelPlanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FEB67441DA96A0800D3196A /* Sources */ = {
@@ -315,6 +390,7 @@
 		};
 		1FEB67631DA96A0800D3196A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B5DD17BBB5879CB03873312 /* Pods-GoEuroTravelPlanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -329,6 +405,7 @@
 		};
 		1FEB67641DA96A0800D3196A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C70F49D3E817F034478560 /* Pods-GoEuroTravelPlanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
