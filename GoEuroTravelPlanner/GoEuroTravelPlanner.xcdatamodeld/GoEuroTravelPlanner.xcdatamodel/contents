@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="BusesData" syncable="YES"/>
+    <entity name="FlightsData" syncable="YES"/>
+    <entity name="TrainsData" syncable="YES"/>
+    <elements>
+        <element name="FlightsData" positionX="-54" positionY="-9" width="128" height="45"/>
+        <element name="TrainsData" positionX="-36" positionY="9" width="128" height="45"/>
+        <element name="BusesData" positionX="-18" positionY="27" width="128" height="45"/>
+    </elements>
+</model>
