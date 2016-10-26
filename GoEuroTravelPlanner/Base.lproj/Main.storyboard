@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Bus-->
+        <!--Buses-->
         <scene sceneID="9wh-nK-7Sb">
             <objects>
                 <tableViewController id="3gh-nT-nNu" customClass="GETravelListingTableViewController" sceneMemberID="viewController">
@@ -14,14 +14,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="v5X-Dp-ulj">
-                                <rect key="frame" x="0.0" y="28" width="600" height="114"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="travelData" id="v5X-Dp-ulj" customClass="ListDetailTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v5X-Dp-ulj" id="3Yy-E9-znN">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="113"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gnv-J4-Txl">
+                                        <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="air_berlin.png" translatesAutoresizingMaskIntoConstraints="NO" id="gnv-J4-Txl">
                                             <rect key="frame" x="9" y="8" width="215" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="215" id="Rs8-CE-ihJ"/>
@@ -82,6 +82,13 @@
                                         <constraint firstAttribute="trailing" secondItem="7Hs-WT-zgn" secondAttribute="trailing" constant="14" id="zEx-aF-Kef"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageProviderLogo" destination="gnv-J4-Txl" id="NfM-7R-nZ2"/>
+                                    <outlet property="labelArrivalAndDepartureTime" destination="4Pc-oA-SXb" id="8CS-Cc-gBW"/>
+                                    <outlet property="labelDuration" destination="ahp-hg-v5X" id="seb-lS-L1h"/>
+                                    <outlet property="labelNoOfStops" destination="Ibw-mf-rJe" id="fBJ-0H-7H8"/>
+                                    <outlet property="labelPriceInEuro" destination="7Hs-WT-zgn" id="XZ5-kI-kuI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -89,13 +96,15 @@
                             <outlet property="delegate" destination="3gh-nT-nNu" id="1y7-e8-u5T"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Bus" image="BusTabBar" selectedImage="BusTabBar" id="5yB-8Q-Eal"/>
+                    <navigationItem key="navigationItem" title="Buses" id="uMf-8Z-89O">
+                        <barButtonItem key="rightBarButtonItem" image="SortingIcon" id="x42-aA-2QA"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eoa-yF-AG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1424" y="793"/>
+            <point key="canvasLocation" x="-612" y="793"/>
         </scene>
-        <!--Flight-->
+        <!--Flights-->
         <scene sceneID="gbD-8l-7DV">
             <objects>
                 <tableViewController id="k4r-9b-STe" customClass="GETravelListingTableViewController" sceneMemberID="viewController">
@@ -104,14 +113,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VQT-es-YWm">
-                                <rect key="frame" x="0.0" y="28" width="600" height="114"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="travelData" id="VQT-es-YWm" customClass="ListDetailTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VQT-es-YWm" id="n79-Xs-5Dn">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="113"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l2o-p2-wx0">
+                                        <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="air_berlin.png" translatesAutoresizingMaskIntoConstraints="NO" id="l2o-p2-wx0">
                                             <rect key="frame" x="9" y="8" width="215" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="M6p-da-JAd"/>
@@ -172,6 +181,13 @@
                                         <constraint firstItem="xxl-fh-4u1" firstAttribute="baseline" secondItem="GeK-yF-cMq" secondAttribute="baseline" id="xrX-GO-40D"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageProviderLogo" destination="l2o-p2-wx0" id="qGP-p7-QAK"/>
+                                    <outlet property="labelArrivalAndDepartureTime" destination="ttO-WC-EgX" id="5Zy-H2-c9x"/>
+                                    <outlet property="labelDuration" destination="GeK-yF-cMq" id="hNJ-Tx-gji"/>
+                                    <outlet property="labelNoOfStops" destination="xxl-fh-4u1" id="Pjb-tG-6y4"/>
+                                    <outlet property="labelPriceInEuro" destination="zYS-VA-lhx" id="mKC-Dx-IFv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -179,11 +195,13 @@
                             <outlet property="delegate" destination="k4r-9b-STe" id="txc-ct-4nq"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Flight" image="FlightTabBar" selectedImage="FlightTabBar" id="wjn-dB-ORT"/>
+                    <navigationItem key="navigationItem" title="Flights" id="neP-Zo-efa">
+                        <barButtonItem key="rightBarButtonItem" image="SortingIcon" id="LE9-Ne-5Bd"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMb-QQ-fF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-260" y="1005"/>
+            <point key="canvasLocation" x="1364" y="1005"/>
         </scene>
         <!--Travel Planner Tab Bar Controller-->
         <scene sceneID="PoB-V7-lb8">
@@ -195,9 +213,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="B5t-se-06A" kind="relationship" relationship="viewControllers" id="mSM-Cb-r1A"/>
-                        <segue destination="3gh-nT-nNu" kind="relationship" relationship="viewControllers" id="HM6-lf-cGO"/>
-                        <segue destination="k4r-9b-STe" kind="relationship" relationship="viewControllers" id="FH4-Bl-4Qo"/>
+                        <segue destination="q3z-57-gqS" kind="relationship" relationship="viewControllers" id="mSM-Cb-r1A"/>
+                        <segue destination="dWE-VQ-YeB" kind="relationship" relationship="viewControllers" id="HM6-lf-cGO"/>
+                        <segue destination="hfw-CK-enZ" kind="relationship" relationship="viewControllers" id="FH4-Bl-4Qo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCl-EX-EdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -213,8 +231,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6M5-KQ-Os0">
-                                <rect key="frame" x="0.0" y="28" width="600" height="114"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="travelData" id="6M5-KQ-Os0" customClass="ListDetailTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6M5-KQ-Os0" id="mNZ-M0-FBD">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="113"/>
@@ -228,10 +246,11 @@
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.93140347810208701" green="0.93529423089224384" blue="0.96458333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ME0-nV-7GD">
+                                        <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="air_berlin.png" translatesAutoresizingMaskIntoConstraints="NO" id="ME0-nV-7GD">
                                             <rect key="frame" x="9" y="8" width="215" height="60"/>
+                                            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="215" id="J2X-8N-c9v"/>
                                                 <constraint firstAttribute="height" constant="60" id="U0n-dS-bH0"/>
@@ -281,22 +300,93 @@
                                         <constraint firstAttribute="trailing" secondItem="YIW-KP-GTv" secondAttribute="trailing" constant="14" id="o7v-Q2-qDl"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageProviderLogo" destination="ME0-nV-7GD" id="IxD-9s-7w7"/>
+                                    <outlet property="labelArrivalAndDepartureTime" destination="rn8-4p-S9c" id="a0J-SL-UH6"/>
+                                    <outlet property="labelDuration" destination="de4-7C-ESA" id="zNP-GR-1el"/>
+                                    <outlet property="labelNoOfStops" destination="0rE-zn-4X3" id="nam-bF-lXZ"/>
+                                    <outlet property="labelPriceInEuro" destination="YIW-KP-GTv" id="nUz-dd-fuQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="B5t-se-06A" id="hnE-Xd-mgd"/>
+                            <outlet property="delegate" destination="B5t-se-06A" id="OVH-0U-Aqg"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Train" image="TrainTabBar" selectedImage="TrainTabBar" id="N9p-ym-ncR"/>
+                    <navigationItem key="navigationItem" title="Trains" id="MO6-jt-IYG">
+                        <barButtonItem key="rightBarButtonItem" image="SortingIcon" id="JuI-3J-VJb">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXE-yD-b6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718" y="918"/>
+            <point key="canvasLocation" x="3154" y="918"/>
+        </scene>
+        <!--Trains-->
+        <scene sceneID="WkY-HC-etW">
+            <objects>
+                <navigationController title="Trains" automaticallyAdjustsScrollViewInsets="NO" id="q3z-57-gqS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Train" image="TrainTabBar" id="N9p-ym-ncR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rPo-3p-gx8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B5t-se-06A" kind="relationship" relationship="rootViewController" id="xAJ-Fv-lpo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlf-ZB-y1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="918"/>
+        </scene>
+        <!--Bus-->
+        <scene sceneID="uAA-NG-0fn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dWE-VQ-YeB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bus" image="BusTabBar" selectedImage="BusTabBar" id="5yB-8Q-Eal"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DMM-CL-RBa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3gh-nT-nNu" kind="relationship" relationship="rootViewController" id="vPu-3Q-YFO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQY-0V-QCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1424" y="793"/>
+        </scene>
+        <!--Flights-->
+        <scene sceneID="ND0-Dz-Dhk">
+            <objects>
+                <navigationController title="Flights" automaticallyAdjustsScrollViewInsets="NO" id="hfw-CK-enZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Flight" image="FlightTabBar" selectedImage="FlightTabBar" id="wjn-dB-ORT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cap-tE-wsW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="k4r-9b-STe" kind="relationship" relationship="rootViewController" id="RSh-jn-jpD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44V-Yv-bcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552" y="1005"/>
         </scene>
     </scenes>
     <resources>
-        <image name="BusTabBar" width="60" height="60"/>
-        <image name="FlightTabBar" width="60" height="60"/>
-        <image name="TrainTabBar" width="40" height="40"/>
+        <image name="BusTabBar" width="32" height="32"/>
+        <image name="FlightTabBar" width="32" height="32"/>
+        <image name="SortingIcon" width="22" height="22"/>
+        <image name="TrainTabBar" width="32" height="32"/>
+        <image name="air_berlin.png" width="160" height="60"/>
     </resources>
 </document>

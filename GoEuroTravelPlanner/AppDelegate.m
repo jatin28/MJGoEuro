@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AFNetworking.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //setting up Magical Record
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
+    [MagicalRecord setLoggingLevel:MagicalRecordLoggingLevelVerbose];
+    [MagicalRecord setupAutoMigratingCoreDataStack];
+    [MagicalRecord enableShorthandMethods];
+    
+    // setting tint color for tab bar
+    UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0,[UIScreen mainScreen].bounds.size.width, 64)];
+    view.backgroundColor=[UIColor colorWithRed:14.0/255.0 green:97.0/255.0 blue:163.0/255.0 alpha:.85];
+    [self.window.rootViewController.view addSubview:view];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:14.0/255.0 green:97.0/255.0 blue:163.0/255.0 alpha:1.0]];
+
+    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:241.0/255.0 green:242.0/255.0 blue:247.0/255.0 alpha:1.0]];
+
+
     return YES;
 }
 

@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F25CE7B1DBDE47900DEDEA2 /* GETravelPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE7A1DBDE47900DEDEA2 /* GETravelPlannerViewController.m */; };
 		1F25CE7F1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE7E1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m */; };
 		1F25CE821DBE212200DEDEA2 /* GETravelListingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE811DBE212200DEDEA2 /* GETravelListingTableViewController.m */; };
-		1F25CE861DBE2A5900DEDEA2 /* BusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE851DBE2A5900DEDEA2 /* BusData.swift */; };
-		1F25CE881DBE2A9300DEDEA2 /* FlighData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE871DBE2A9300DEDEA2 /* FlighData.swift */; };
+		1F25CE861DBE2A5900DEDEA2 /* TravelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE851DBE2A5900DEDEA2 /* TravelData.swift */; };
+		1F25CE881DBE2A9300DEDEA2 /* FlightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE871DBE2A9300DEDEA2 /* FlightData.swift */; };
 		1F25CE8A1DBE2AA500DEDEA2 /* TrainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CE891DBE2AA500DEDEA2 /* TrainData.swift */; };
+		1F25CEB31DBE2FFD00DEDEA2 /* WebServicesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CEB21DBE2FFD00DEDEA2 /* WebServicesHandler.m */; };
+		1F25CEB51DBE363600DEDEA2 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25CEB41DBE363600DEDEA2 /* Commons.swift */; };
+		1FA253581DBF64DE002AC678 /* air_berlin.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA253571DBF64DE002AC678 /* air_berlin.png */; };
+		1FA2535D1DBF7802002AC678 /* ListDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2535C1DBF7802002AC678 /* ListDetailTableViewCell.m */; };
+		1FA2536B1DC086B6002AC678 /* BusesData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA253601DC086B6002AC678 /* BusesData+CoreDataProperties.m */; };
+		1FA2536C1DC086B6002AC678 /* BusesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA253621DC086B6002AC678 /* BusesData.m */; };
+		1FA2536D1DC086B6002AC678 /* FlightsData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA253641DC086B6002AC678 /* FlightsData+CoreDataProperties.m */; };
+		1FA2536E1DC086B6002AC678 /* FlightsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA253661DC086B6002AC678 /* FlightsData.m */; };
+		1FA2536F1DC086B6002AC678 /* TrainsData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA253681DC086B6002AC678 /* TrainsData+CoreDataProperties.m */; };
+		1FA253701DC086B6002AC678 /* TrainsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2536A1DC086B6002AC678 /* TrainsData.m */; };
 		1FEB674D1DA96A0800D3196A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB674C1DA96A0800D3196A /* main.m */; };
 		1FEB67501DA96A0800D3196A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB674F1DA96A0800D3196A /* AppDelegate.m */; };
 		1FEB67531DA96A0800D3196A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB67521DA96A0800D3196A /* ViewController.m */; };
@@ -25,17 +34,34 @@
 
 /* Begin PBXFileReference section */
 		16C70F49D3E817F034478560 /* Pods-GoEuroTravelPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuroTravelPlanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuroTravelPlanner/Pods-GoEuroTravelPlanner.release.xcconfig"; sourceTree = "<group>"; };
-		1F25CE791DBDE47900DEDEA2 /* GETravelPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelPlannerViewController.h; path = ViewControllers/GETravelPlannerViewController.h; sourceTree = "<group>"; };
-		1F25CE7A1DBDE47900DEDEA2 /* GETravelPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelPlannerViewController.m; path = ViewControllers/GETravelPlannerViewController.m; sourceTree = "<group>"; };
 		1F25CE7C1DBDE4C700DEDEA2 /* GEConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEConstants.h; path = Constants/GEConstants.h; sourceTree = "<group>"; };
-		1F25CE7D1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelPlannerTabBarController.h; path = ViewControllers/GETravelPlannerTabBarController.h; sourceTree = "<group>"; };
-		1F25CE7E1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelPlannerTabBarController.m; path = ViewControllers/GETravelPlannerTabBarController.m; sourceTree = "<group>"; };
-		1F25CE801DBE212200DEDEA2 /* GETravelListingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelListingTableViewController.h; path = ViewControllers/GETravelListingTableViewController.h; sourceTree = "<group>"; };
-		1F25CE811DBE212200DEDEA2 /* GETravelListingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelListingTableViewController.m; path = ViewControllers/GETravelListingTableViewController.m; sourceTree = "<group>"; };
+		1F25CE7D1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelPlannerTabBarController.h; path = GoEuroTravelPlanner/ViewControllers/GETravelPlannerTabBarController.h; sourceTree = "<group>"; };
+		1F25CE7E1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelPlannerTabBarController.m; path = GoEuroTravelPlanner/ViewControllers/GETravelPlannerTabBarController.m; sourceTree = "<group>"; };
+		1F25CE801DBE212200DEDEA2 /* GETravelListingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GETravelListingTableViewController.h; path = GoEuroTravelPlanner/ViewControllers/GETravelListingTableViewController.h; sourceTree = "<group>"; };
+		1F25CE811DBE212200DEDEA2 /* GETravelListingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GETravelListingTableViewController.m; path = GoEuroTravelPlanner/ViewControllers/GETravelListingTableViewController.m; sourceTree = "<group>"; };
 		1F25CE841DBE2A5900DEDEA2 /* GoEuroTravelPlanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoEuroTravelPlanner-Bridging-Header.h"; sourceTree = "<group>"; };
-		1F25CE851DBE2A5900DEDEA2 /* BusData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusData.swift; path = DataModels/BusData.swift; sourceTree = "<group>"; };
-		1F25CE871DBE2A9300DEDEA2 /* FlighData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlighData.swift; path = DataModels/FlighData.swift; sourceTree = "<group>"; };
+		1F25CE851DBE2A5900DEDEA2 /* TravelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TravelData.swift; path = DataModels/TravelData.swift; sourceTree = "<group>"; };
+		1F25CE871DBE2A9300DEDEA2 /* FlightData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlightData.swift; path = DataModels/FlightData.swift; sourceTree = "<group>"; };
 		1F25CE891DBE2AA500DEDEA2 /* TrainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainData.swift; path = DataModels/TrainData.swift; sourceTree = "<group>"; };
+		1F25CEB11DBE2FFD00DEDEA2 /* WebServicesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServicesHandler.h; sourceTree = "<group>"; };
+		1F25CEB21DBE2FFD00DEDEA2 /* WebServicesHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServicesHandler.m; sourceTree = "<group>"; };
+		1F25CEB41DBE363600DEDEA2 /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		1FA253571DBF64DE002AC678 /* air_berlin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = air_berlin.png; sourceTree = "<group>"; };
+		1FA2535B1DBF7802002AC678 /* ListDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListDetailTableViewCell.h; path = GoEuroTravelPlanner/CustomViews/ListDetailTableViewCell.h; sourceTree = "<group>"; };
+		1FA2535C1DBF7802002AC678 /* ListDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListDetailTableViewCell.m; path = GoEuroTravelPlanner/CustomViews/ListDetailTableViewCell.m; sourceTree = "<group>"; };
+		1FA2535F1DC086B6002AC678 /* BusesData+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BusesData+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1FA253601DC086B6002AC678 /* BusesData+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BusesData+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1FA253611DC086B6002AC678 /* BusesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusesData.h; sourceTree = "<group>"; };
+		1FA253621DC086B6002AC678 /* BusesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusesData.m; sourceTree = "<group>"; };
+		1FA253631DC086B6002AC678 /* FlightsData+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlightsData+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1FA253641DC086B6002AC678 /* FlightsData+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FlightsData+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1FA253651DC086B6002AC678 /* FlightsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsData.h; sourceTree = "<group>"; };
+		1FA253661DC086B6002AC678 /* FlightsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsData.m; sourceTree = "<group>"; };
+		1FA253671DC086B6002AC678 /* TrainsData+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrainsData+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1FA253681DC086B6002AC678 /* TrainsData+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TrainsData+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1FA253691DC086B6002AC678 /* TrainsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainsData.h; sourceTree = "<group>"; };
+		1FA2536A1DC086B6002AC678 /* TrainsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainsData.m; sourceTree = "<group>"; };
+		1FDDDE471DBF25DC0012CD15 /* GoEuroTravelPlannerPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoEuroTravelPlannerPrefixHeader.pch; sourceTree = SOURCE_ROOT; };
 		1FEB67481DA96A0800D3196A /* GoEuroTravelPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEuroTravelPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FEB674C1DA96A0800D3196A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1FEB674E1DA96A0800D3196A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,12 +100,62 @@
 		1F25CE831DBE2A1500DEDEA2 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				1F25CE851DBE2A5900DEDEA2 /* BusData.swift */,
+				1F25CE851DBE2A5900DEDEA2 /* TravelData.swift */,
 				1F25CE841DBE2A5900DEDEA2 /* GoEuroTravelPlanner-Bridging-Header.h */,
-				1F25CE871DBE2A9300DEDEA2 /* FlighData.swift */,
+				1F25CE871DBE2A9300DEDEA2 /* FlightData.swift */,
 				1F25CE891DBE2AA500DEDEA2 /* TrainData.swift */,
 			);
 			name = DataModels;
+			sourceTree = "<group>";
+		};
+		1F25CE8B1DBE2D4800DEDEA2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1F25CEB11DBE2FFD00DEDEA2 /* WebServicesHandler.h */,
+				1F25CEB21DBE2FFD00DEDEA2 /* WebServicesHandler.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		1F25CE8C1DBE2E8E00DEDEA2 /* CoreDataEntityClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1FA2535F1DC086B6002AC678 /* BusesData+CoreDataProperties.h */,
+				1FA253601DC086B6002AC678 /* BusesData+CoreDataProperties.m */,
+				1FA253611DC086B6002AC678 /* BusesData.h */,
+				1FA253621DC086B6002AC678 /* BusesData.m */,
+				1FA253631DC086B6002AC678 /* FlightsData+CoreDataProperties.h */,
+				1FA253641DC086B6002AC678 /* FlightsData+CoreDataProperties.m */,
+				1FA253651DC086B6002AC678 /* FlightsData.h */,
+				1FA253661DC086B6002AC678 /* FlightsData.m */,
+				1FA253671DC086B6002AC678 /* TrainsData+CoreDataProperties.h */,
+				1FA253681DC086B6002AC678 /* TrainsData+CoreDataProperties.m */,
+				1FA253691DC086B6002AC678 /* TrainsData.h */,
+				1FA2536A1DC086B6002AC678 /* TrainsData.m */,
+			);
+			name = CoreDataEntityClasses;
+			sourceTree = "<group>";
+		};
+		1FA253591DBF77BD002AC678 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F25CE7D1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.h */,
+				1F25CE7E1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m */,
+				1F25CE801DBE212200DEDEA2 /* GETravelListingTableViewController.h */,
+				1F25CE811DBE212200DEDEA2 /* GETravelListingTableViewController.m */,
+			);
+			name = ViewControllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1FA2535A1DBF77D1002AC678 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1FA2535B1DBF7802002AC678 /* ListDetailTableViewCell.h */,
+				1FA2535C1DBF7802002AC678 /* ListDetailTableViewCell.m */,
+			);
+			name = CustomViews;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		1FEB673F1DA96A0800D3196A = {
@@ -103,12 +179,12 @@
 		1FEB674A1DA96A0800D3196A /* GoEuroTravelPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				1FA2535A1DBF77D1002AC678 /* CustomViews */,
+				1FA253591DBF77BD002AC678 /* ViewControllers */,
+				1F25CE8C1DBE2E8E00DEDEA2 /* CoreDataEntityClasses */,
+				1F25CE8B1DBE2D4800DEDEA2 /* Networking */,
 				1F25CE831DBE2A1500DEDEA2 /* DataModels */,
 				1F25CE771DBDDBB200DEDEA2 /* Constants */,
-				1F25CE7D1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.h */,
-				1F25CE7E1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m */,
-				1F25CE801DBE212200DEDEA2 /* GETravelListingTableViewController.h */,
-				1F25CE811DBE212200DEDEA2 /* GETravelListingTableViewController.m */,
 				1FEB674E1DA96A0800D3196A /* AppDelegate.h */,
 				1FEB674F1DA96A0800D3196A /* AppDelegate.m */,
 				1FEB67511DA96A0800D3196A /* ViewController.h */,
@@ -119,8 +195,6 @@
 				1FEB675F1DA96A0800D3196A /* Info.plist */,
 				1FEB67571DA96A0800D3196A /* GoEuroTravelPlanner.xcdatamodeld */,
 				1FEB674B1DA96A0800D3196A /* Supporting Files */,
-				1F25CE791DBDE47900DEDEA2 /* GETravelPlannerViewController.h */,
-				1F25CE7A1DBDE47900DEDEA2 /* GETravelPlannerViewController.m */,
 			);
 			path = GoEuroTravelPlanner;
 			sourceTree = "<group>";
@@ -128,6 +202,9 @@
 		1FEB674B1DA96A0800D3196A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F25CEB41DBE363600DEDEA2 /* Commons.swift */,
+				1FDDDE471DBF25DC0012CD15 /* GoEuroTravelPlannerPrefixHeader.pch */,
+				1FA253571DBF64DE002AC678 /* air_berlin.png */,
 				1FEB674C1DA96A0800D3196A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -210,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA253581DBF64DE002AC678 /* air_berlin.png in Resources */,
 				1FEB675E1DA96A0800D3196A /* LaunchScreen.storyboard in Resources */,
 				1FEB675B1DA96A0800D3196A /* Assets.xcassets in Resources */,
 				1FEB67561DA96A0800D3196A /* Main.storyboard in Resources */,
@@ -272,13 +350,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FEB67531DA96A0800D3196A /* ViewController.m in Sources */,
-				1F25CE7B1DBDE47900DEDEA2 /* GETravelPlannerViewController.m in Sources */,
 				1F25CE8A1DBE2AA500DEDEA2 /* TrainData.swift in Sources */,
+				1F25CEB51DBE363600DEDEA2 /* Commons.swift in Sources */,
+				1FA2536E1DC086B6002AC678 /* FlightsData.m in Sources */,
 				1F25CE7F1DBE0DCA00DEDEA2 /* GETravelPlannerTabBarController.m in Sources */,
 				1FEB67501DA96A0800D3196A /* AppDelegate.m in Sources */,
-				1F25CE861DBE2A5900DEDEA2 /* BusData.swift in Sources */,
+				1FA253701DC086B6002AC678 /* TrainsData.m in Sources */,
+				1FA2536B1DC086B6002AC678 /* BusesData+CoreDataProperties.m in Sources */,
+				1F25CE861DBE2A5900DEDEA2 /* TravelData.swift in Sources */,
+				1F25CEB31DBE2FFD00DEDEA2 /* WebServicesHandler.m in Sources */,
 				1FEB67591DA96A0800D3196A /* GoEuroTravelPlanner.xcdatamodeld in Sources */,
-				1F25CE881DBE2A9300DEDEA2 /* FlighData.swift in Sources */,
+				1FA2536F1DC086B6002AC678 /* TrainsData+CoreDataProperties.m in Sources */,
+				1F25CE881DBE2A9300DEDEA2 /* FlightData.swift in Sources */,
+				1FA2536C1DC086B6002AC678 /* BusesData.m in Sources */,
+				1FA2536D1DC086B6002AC678 /* FlightsData+CoreDataProperties.m in Sources */,
+				1FA2535D1DBF7802002AC678 /* ListDetailTableViewCell.m in Sources */,
 				1FEB674D1DA96A0800D3196A /* main.m in Sources */,
 				1F25CE821DBE212200DEDEA2 /* GETravelListingTableViewController.m in Sources */,
 			);
@@ -394,6 +480,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GoEuroTravelPlannerPrefixHeader.pch;
 				INFOPLIST_FILE = GoEuroTravelPlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.test.GoEuroTravelPlanner;
@@ -409,6 +497,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GoEuroTravelPlannerPrefixHeader.pch;
 				INFOPLIST_FILE = GoEuroTravelPlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.test.GoEuroTravelPlanner;

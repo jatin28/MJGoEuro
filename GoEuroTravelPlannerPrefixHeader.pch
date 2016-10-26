@@ -1,0 +1,20 @@
+//
+//  GoEuroTravelPlannerPrefixHeader.pch
+//  GoEuroTravelPlanner
+//
+//  Created by Jatin Mohindra on 25/10/16.
+//  Copyright © 2016 Jatin Mohindra. All rights reserved.
+//
+
+#ifndef GoEuroTravelPlannerPrefixHeader_pch
+#define GoEuroTravelPlannerPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <MagicalRecord/MagicalRecord.h>
+#import <MagicalRecord/MagicalRecord+ShorthandMethods.h>
+
+#import "GEConstants.h"
+
+
+#endif /* GoEuroTravelPlannerPrefixHeader_pch */

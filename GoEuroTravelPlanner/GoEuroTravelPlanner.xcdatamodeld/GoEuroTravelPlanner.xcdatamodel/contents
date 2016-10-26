@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
-    <entity name="BusesData" syncable="YES">
-        <attribute name="arrival_time" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="departure_time" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    <entity name="BusesData" representedClassName="BusesData" syncable="YES">
+        <attribute name="arrival_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bus_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="departure_time" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="number_of_stops" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="price_in_euros" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="price_in_euros" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="provider_logo" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="FlightsData" syncable="YES">
-        <attribute name="arrival_time" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="departure_time" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    <entity name="FlightsData" representedClassName="FlightsData" syncable="YES">
+        <attribute name="arrival_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departure_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flight_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="number_of_stops" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="price_in_euros" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="price_in_euros" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="provider_logo" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="TrainsData" syncable="YES">
-        <attribute name="arrival_time" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="departure_time" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    <entity name="TrainsData" representedClassName="TrainsData" syncable="YES">
+        <attribute name="arrival_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departure_time" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="number_of_stops" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="price_in_euros" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="price_in_euros" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="provider_logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="train_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
         <element name="BusesData" positionX="-18" positionY="27" width="128" height="135"/>

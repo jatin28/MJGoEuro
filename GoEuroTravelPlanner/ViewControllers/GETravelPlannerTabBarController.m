@@ -7,15 +7,21 @@
 //
 
 #import "GETravelPlannerTabBarController.h"
+#import "WebServicesHandler.h"
+#import "GoEuroTravelPlanner-Swift.h"
 
 @interface GETravelPlannerTabBarController ()
 
 @end
 
 @implementation GETravelPlannerTabBarController
+@synthesize travelListTableObject;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     travelListTableObject = [[GETravelListingTableViewController alloc] init];
+    [travelListTableObject setModeValue:Train];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -28,16 +34,23 @@
 {
     if ([item.title isEqualToString:kBusTabTitle]) {
         // set condition for showing bus data
+        [travelListTableObject setModeValue:Bus];
     }
     else if ([item.title isEqualToString:kTrainTabTitle])
     {
         //set condition for showing train data
+        [travelListTableObject setModeValue:Train];
+
     }
     else
     {
-        //set condition for showing 
+        //set condition for showing
+        [travelListTableObject setModeValue:Flight];
+
     }
 }
+
+
 
 
 /*
