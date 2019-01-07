@@ -29,6 +29,7 @@
     
     // setting tint color for tab bar
     UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0,[UIScreen mainScreen].bounds.size.width, 64)];
+    NSLog(@"view===%@", view);
     view.backgroundColor=[UIColor colorWithRed:14.0/255.0 green:97.0/255.0 blue:163.0/255.0 alpha:.85];
     [self.window.rootViewController.view addSubview:view];
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:14.0/255.0 green:97.0/255.0 blue:163.0/255.0 alpha:1.0]];
